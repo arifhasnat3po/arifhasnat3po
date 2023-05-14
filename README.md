@@ -1,4 +1,5 @@
 [![MasterHead](https://giphy.com/clips/AnimationOnFOX-the-simpsons-fox-foxtv-KpJ47gKe6b7v7xQyWj)](https://github.com/arifhasnat3po)
+<div style="width:100%"><div style="height:0;padding-bottom:56.25%;position:relative;width:100%"><iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/KpJ47gKe6b7v7xQyWj/video" style="left:0;position:absolute;top:0" width="100%"></iframe></div></div>
 <h1 align="center">Hi 👋, I'm Arif Hasnat</h1>
 <h3 align="center">Let's code together! 🤖💻</h3>
 <img align="center" alt="Coding" width="400" src="https://media.giphy.com/media/L3VvDvnVQ94wTjTPBa/giphy.gif")>
