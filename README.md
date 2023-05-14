@@ -1,7 +1,7 @@
 [![MasterHead](https://camo.githubusercontent.com/efe028a1acecb148345817f09b7aa02ccb73f1335baf7ece530f6be85d4bfa1e/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f32662f66342f32382f32666634323830303666336164653566313062656163363933373230363261622e676966)](https://github.com/arifhasnat3po)
 <h1 align="center">Hi 👋, I'm Arif Hasnat</h1>
 <h3 align="center">Let's code together! 🤖💻</h3>
-<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif")>
+<img align="center" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif")>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20views&color=0e75b6&style=flat" alt="arifhasnat3po" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=arifhasnat3po" alt="arifhasnat3po" /></a> </p>
