@@ -1,8 +1,8 @@
-[![MasterHead](https://camo.githubusercontent.com/efe028a1acecb148345817f09b7aa02ccb73f1335baf7ece530f6be85d4bfa1e/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f32662f66342f32382f32666634323830303666336164653566313062656163363933373230363261622e676966)](https://github.com/arifhasnat3po)
+[![MasterHead](https://wallpaperaccess.com/full/5927911.gif)](https://github.com/arifhasnat3po)
 
 <h1 align="center">Hi 👋, I'm Arif Hasnat</h1>
 <h3 align="center">Let's code together! 🤖💻</h3>
-<img align="center" alt="Coding" width="400" src="https://media.giphy.com/media/L3VvDvnVQ94wTjTPBa/giphy.gif")>
+
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20views&color=0e75b6&style=flat" alt="arifhasnat3po" /> </p>
 
