@@ -118,3 +118,4 @@ Cybersecurity        ██████████████░░░░░�
 Networking / CCNA    ███████████████░░░░░   Routing, switching, protocols
 Python Development   ████████████████░░░░   Automation and problem solving
 Databases            ████████████░░░░░░░░   SQL and NoSQL basics
+![snake](https://github.com/arifhasnat3po/snake/blob/output/snake.svg)
