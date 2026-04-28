@@ -1,34 +1,120 @@
-[![MasterHead](https://blog.zoho.com/sites/zblogs/images/cliq/new-converted-2019-08.gif)](https://github.com/arifhasnat3po)
-<h1 align="center">Hi 👋, I'm Arif Hasnat</h1>
-<h3 align="center">Let's code together! 🤖💻</h3>
+<!--
+  GitHub Profile README for arifhasnat3po
+  Copy this file into a repository named: arifhasnat3po/arifhasnat3po
+-->
 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=220&section=header&text=Arif%20Hasnat&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Machine%20Learning%20%7C%20Cybersecurity%20%7C%20Networking&descAlignY=58&descSize=18" alt="Arif Hasnat profile banner" />
+</div>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20views&color=0e75b6&style=flat" alt="arifhasnat3po" /> </p>
+<div align="center">
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=arifhasnat3po" alt="arifhasnat3po" /></a> </p>
+# Hi, I'm Arif Hasnat 👋
 
-<p align="left"> <a href="https://twitter.com/arifhasnat7" target="blank"><img src="https://img.shields.io/twitter/follow/arifhasnat7?logo=twitter&style=for-the-badge" alt="arifhasnat7" /></a> </p>
+### Building intelligent systems, securing networks, and learning in public.
 
-- 🔭 I’m currently working on **Machine Learning**
+<a href="mailto:arifhasnat83@gmail.com">
+  <img src="https://img.shields.io/badge/Email-arifhasnat83%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+<a href="https://linkedin.com/in/arif-hasnat" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Arif%20Hasnat-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://twitter.com/arifhasnat7" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-@arifhasnat7-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter / X" />
+</a>
+<a href="https://kaggle.com/arifhasnatr2" target="_blank">
+  <img src="https://img.shields.io/badge/Kaggle-arifhasnatr2-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+</a>
 
-- 🌱 I’m currently learning **CCNA, Network Security, Machine learning**
+<br />
 
-- 💬 Ask me about **CCNA, Cybersecurity**
+<img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/arifhasnat3po?label=Followers&style=flat-square&color=blue" alt="GitHub followers" />
+<img src="https://img.shields.io/github/stars/arifhasnat3po?label=Stars&style=flat-square&color=yellow" alt="GitHub stars" />
 
-- 📫 How to reach me **arifhasnat83@gmail.com**
+</div>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/arifhasnat7" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="arifhasnat7" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/arif-hasnat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="arif-hasnat" height="30" width="40" /></a>
-<a href="https://kaggle.com/arifhasnatr2" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="arifhasnatr2" height="30" width="40" /></a>
+---
+
+## 🚀 About Me
+
+I am a software and technology learner focused on **Machine Learning**, **Cybersecurity**, and **Computer Networking**.  
+I enjoy turning complex ideas into clean, useful, and reliable projects.
+
+- 🔭 Currently working on: **Machine Learning projects**
+- 🌱 Currently learning: **CCNA, Network Security, and Machine Learning**
+- 💬 Ask me about: **Networking, Cybersecurity, Python, and ML basics**
+- 🎯 Goal: Build practical tools that solve real problems
+- 📫 Reach me at: **[arifhasnat83@gmail.com](mailto:arifhasnat83@gmail.com)**
+
+---
+
+## 🧠 Core Interests
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" alt="Python" />
+      <br />
+      <strong>Machine Learning</strong>
+      <br />
+      <sub>Data, models, prediction, and automation</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="45" alt="Linux" />
+      <br />
+      <strong>Cybersecurity</strong>
+      <br />
+      <sub>Security fundamentals, Linux, and defense</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" width="45" alt="Networking" />
+      <br />
+      <strong>Networking</strong>
+      <br />
+      <sub>CCNA, routing, switching, and protocols</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,c,java,html,css,js" alt="Languages" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+### Machine Learning & Data
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=arifhasnat3po&show_icons=true&locale=en&layout=compact" alt="arifhasnat3po" /></p>
+<p>
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" alt="ML tools" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="48" alt="Pandas" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="48" alt="NumPy" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="48" alt="Matplotlib" />
+</p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=arifhasnat3po&show_icons=true&locale=en" alt="arifhasnat3po" /></p>
+### Databases & Backend
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=arifhasnat3po&" alt="arifhasnat3po" /></p>
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,mongodb,mysql,postgres" alt="Backend and databases" />
+</p>
+
+### Tools & Operating Systems
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,linux,vscode" alt="Tools" />
+</p>
+
+---
+
+## 📌 Featured Focus Areas
+
+```txt
+Machine Learning     ███████████████░░░░░   Learning & building
+Cybersecurity        ██████████████░░░░░░   Security fundamentals
+Networking / CCNA    ███████████████░░░░░   Routing, switching, protocols
+Python Development   ████████████████░░░░   Automation and problem solving
+Databases            ████████████░░░░░░░░   SQL and NoSQL basics
