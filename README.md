@@ -109,7 +109,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 </p>
 
 ---
-
+![snake](https://raw.githubusercontent.com/arifhasnat3po/snake/output/snake.svg)
 ## 📌 Featured Focus Areas
 
 ```txt
@@ -118,7 +118,3 @@ Cybersecurity        ██████████████░░░░░�
 Networking / CCNA    ███████████████░░░░░   Routing, switching, protocols
 Python Development   ████████████████░░░░   Automation and problem solving
 Databases            ████████████░░░░░░░░   SQL and NoSQL basics
-
-## 🐍 Contribution Snake
-
-![snake](https://raw.githubusercontent.com/arifhasnat3po/snake/output/snake.svg)
