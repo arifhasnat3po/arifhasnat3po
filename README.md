@@ -9,8 +9,6 @@
 
 <div align="center">
 
-# Hi, I'm Arif Hasnat 👋
-
 ### Building intelligent systems, securing networks, and learning in public.
 
 <a href="mailto:arifhasnat83@gmail.com">
