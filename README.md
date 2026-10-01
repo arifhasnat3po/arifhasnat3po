@@ -34,7 +34,7 @@
 
 ---
 
-## 🚀 About Me
+## About Me
 
 I am a software and technology learner focused on **Machine Learning**, **Cybersecurity**, and **Computer Networking**.  
 I enjoy turning complex ideas into clean, useful, and reliable projects.
@@ -47,7 +47,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 ---
 
-## 🧠 Core Interests
+## Core Interests
 
 <table>
   <tr>
@@ -77,7 +77,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Languages
 
@@ -108,7 +108,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 ---
 ![snake](https://raw.githubusercontent.com/arifhasnat3po/snake/output/snake.svg)
-## 📌 Featured Focus Areas
+## Featured Focus Areas
 
 ```txt
 Machine Learning     ███████████████░░░░░   Learning & building
