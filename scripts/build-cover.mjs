@@ -8,7 +8,7 @@ export async function buildCover() {
   const random=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
   const stars=Array.from({length:170},(_,i)=>{
     const x=(random()*860).toFixed(1),y=(random()*300).toFixed(1),r=(.35+random()*.85).toFixed(2);
-    return `<circle cx="${x}" cy="${y}" r="${r}" fill="${i%4?'#c8d4ef':'#fff0d9'}" opacity="${(.2+random()*.6).toFixed(2)}"${i%11===0?' class="star"':''}/>`;
+    return `<circle cx="${x}" cy="${y}" r="${r}" fill="${i%4?'#c8d4ef':'#fff0d9'}" opacity="${(.2+random()*.6).toFixed(2)}"${i%3===0?' class="star"':''}/>`;
   }).join('');
   const galaxy=Array.from({length:390},(_,i)=>{
     const arm=i%3, t=random()*Math.PI*3, radius=16+t*15, scatter=(random()-.5)*22;
@@ -28,8 +28,8 @@ export async function buildCover() {
 <g clip-path="url(#bounds)">
 <rect width="860" height="300" fill="url(#space)"/>
 ${stars}
-<g opacity=".7">${galaxy}</g>
-<circle cx="570" cy="143" r="115" fill="url(#halo)"/>
+<g class="galaxy" opacity=".7">${galaxy}</g>
+<circle class="halo" cx="570" cy="143" r="115" fill="url(#halo)"/>
 <g transform="translate(570 143) rotate(-14)">
 <ellipse rx="165" ry="38" fill="none" stroke="url(#disk)" stroke-width="16" opacity=".14"/>
 <ellipse rx="152" ry="30" fill="none" stroke="url(#disk)" stroke-width="3"/>
@@ -43,9 +43,9 @@ ${stars}
 <text x="30" y="272" fill="#acb7cb" font-size="14">Machine learning · Security · Networks</text>
 <text x="830" y="272" fill="#acb7cb" text-anchor="end" font-size="12">@arifhasnat3po</text>
 </g>
-<style>text{font-family:Arial,Helvetica,sans-serif}.orbit{animation:orbit 26s linear infinite;transform-origin:0 0}.star{animation:twinkle 7s ease-in-out infinite alternate}.star:nth-child(odd){animation-delay:-4s}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes twinkle{to{opacity:.18}}@media(prefers-reduced-motion:reduce){.orbit,.star{animation:none}}</style></svg>\n`;
+<style>text{font-family:Arial,Helvetica,sans-serif}.orbit{animation:orbit 9s linear infinite;transform-origin:0 0}.star{animation:twinkle 3s ease-in-out infinite alternate}.star:nth-child(odd){animation-delay:-1.5s}.galaxy{animation:galaxy 100s linear infinite;transform-origin:570px 143px}.halo{animation:halo 5s ease-in-out infinite alternate;transform-origin:570px 143px}@keyframes galaxy{to{transform:rotate(360deg)}}@keyframes halo{to{opacity:.55;transform:scale(1.12)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes twinkle{from{opacity:.12}to{opacity:1}}@media(prefers-reduced-motion:reduce){.orbit,.star,.galaxy,.halo{animation:none}}</style></svg>\n`;
   await fs.writeFile(path.join(root,'assets/profile-cover.svg'),svg);
-  await fs.writeFile(path.join(root,'assets/profile-cover-static.svg'),svg.replaceAll(/animation:(?:orbit|twinkle)[^;}]+/g,'animation:none'));
+  await fs.writeFile(path.join(root,'assets/profile-cover-static.svg'),svg.replaceAll(/animation:(?:orbit|twinkle|galaxy|halo)[^;}]+/g,'animation:none'));
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   await buildCover();

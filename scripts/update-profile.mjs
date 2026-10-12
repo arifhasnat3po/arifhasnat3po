@@ -51,48 +51,20 @@ const stats = {
 if (![stats.stars,stats.followers].every(value=>Number.isSafeInteger(value)&&value>=0)) throw new Error('Invalid public profile counts.');
 const totalCommits = months.reduce((sum,month)=>sum+month.count,0);
 const displayedStats=visibleStats(stats);
-const statsTable=[...displayedStats,["Public commits in the chart's date window",totalCommits]]
-  .filter(([,value])=>value>0).map(([label,value])=>`| ${label} | ${value} |`).join('\n');
 const picture = (name,alt,width) => `<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg" />
   <img src="assets/${name}-light.svg" width="${width}" alt="${escapeXml(alt)}" />
 </picture>`;
-const recent = snapshot.recent.map(repo => `| [${repo.name}](https://github.com/arifhasnat3po/${repo.name}) | ${repo.pushed} |`).join('\n');
 const content = `<p>
 ${picture('github-stats',`${displayedStats.map(([label,value])=>`${label}: ${value}`).join('; ')}. On GitHub since ${stats.since}.`,420)}
 ${picture('github-languages',languages.rows.map(row=>`${row.name} ${row.percent.toFixed(1)}%`).join(', ')+'. Language shares by code bytes in original public repositories.',420)}
 </p>
 
-${picture('github-activity',`${totalCommits} public commits from ${months[0].from} to ${months.at(-1).to}. Monthly counts and methodology follow below.`,860)}
+${picture('github-activity',`${totalCommits} public commits from ${months[0].from} to ${months.at(-1).to}. Public default-branch commits; current month is partial.`,860)}
 
 **${snapshot.repositories} original public repositories · ${snapshot.languages} primary languages · PixelPair ${snapshot.latestRelease}**
 
-<details>
-<summary>See the numbers, recent projects, and how these charts are counted</summary>
-
-| GitHub stats | Count |
-| :--- | ---: |
-${statsTable}
-
-| Language | Share of code bytes |
-| :--- | ---: |
-${languages.rows.map(row=>`| ${row.name} | ${row.percent.toFixed(1)}% |`).join('\n')}
-
-| Month (UTC) | Public commits |
-| :--- | ---: |
-${months.map(month=>`| ${month.key} | ${month.count} |`).join('\n')}
-
-| Public project | Last push (UTC) |
-| :--- | :--- |
-${recent}
-
-Refreshed **${date}** from GitHub's public API. Repository, star, and language charts use original public repositories; forks and private repositories are excluded. Language percentages measure code bytes on default branches, not proficiency, authorship, or time spent. Small languages are grouped as Other.
-
-Public pull requests and issues are lifetime authored counts. Monthly commits use GitHub's public commit search, filtered by author and UTC commit date; only default branches are indexed. The current month is still in progress. These counts differ from GitHub's contribution calendar. This profile and the snake automation are omitted from the recent-project list.
-
-This section refreshes weekly through [GitHub Actions](https://github.com/arifhasnat3po/arifhasnat3po/actions/workflows/profile.yml). [How to maintain it](docs/profile-maintenance.md).
-
-</details>`;
+`;
 const readme = await fs.readFile(path.join(root, 'README.md'), 'utf8');
 const updated = replaceSnapshot(readme, content);
 await fs.mkdir(path.join(root, 'assets'), { recursive: true });

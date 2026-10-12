@@ -8,25 +8,16 @@
 <br />
 
 <div align="center">
-
-<a href="mailto:arifhasnat83@gmail.com">
-  <img src="https://img.shields.io/badge/Email-arifhasnat83%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="https://linkedin.com/in/arif-hasnat" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Arif%20Hasnat-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://twitter.com/arifhasnat7" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-@arifhasnat7-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter / X" />
-</a>
-<a href="https://kaggle.com/arifhasnatr2" target="_blank">
-  <img src="https://img.shields.io/badge/Kaggle-arifhasnatr2-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
-</a>
-
-<br />
-
-<img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
-<img src="https://img.shields.io/github/followers/arifhasnat3po?label=Followers&style=flat-square&color=blue" alt="GitHub followers" />
-
+<p>
+<a href="mailto:arifhasnat83@gmail.com"><img src="https://img.shields.io/badge/Email-30363d?style=flat&amp;logo=gmail&amp;logoColor=white" alt="Email" /></a>
+<a href="https://linkedin.com/in/arif-hasnat"><img src="https://img.shields.io/badge/LinkedIn-30363d?style=flat&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+<a href="https://twitter.com/arifhasnat7"><img src="https://img.shields.io/badge/X-30363d?style=flat&amp;logo=x&amp;logoColor=white" alt="X" /></a>
+<a href="https://kaggle.com/arifhasnatr2"><img src="https://img.shields.io/badge/Kaggle-30363d?style=flat&amp;logo=kaggle&amp;logoColor=white" alt="Kaggle" /></a>
+</p>
+<p>
+<img src="https://komarev.com/ghpvc/?username=arifhasnat3po&amp;label=Profile%20views&amp;color=536477&amp;style=flat" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/arifhasnat3po?label=Followers&amp;style=flat&amp;color=536477" alt="GitHub followers" />
+</p>
 </div>
 
 ---
@@ -60,60 +51,11 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-dark.svg" />
-  <img src="assets/github-activity-light.svg" width="860" alt="38 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
+  <img src="assets/github-activity-light.svg" width="860" alt="38 public commits from 2025-11-01 to 2026-10-12. Public default-branch commits; current month is partial." />
 </picture>
 
 **28 original public repositories · 10 primary languages · PixelPair v0.9.4**
 
-<details>
-<summary>See the numbers, recent projects, and how these charts are counted</summary>
-
-| GitHub stats | Count |
-| :--- | ---: |
-| Original public repos | 28 |
-| Followers | 10 |
-| Public pull requests | 1 |
-| Public commits in the chart's date window | 38 |
-
-| Language | Share of code bytes |
-| :--- | ---: |
-| JavaScript | 29.8% |
-| PHP | 16.8% |
-| CSS | 12.5% |
-| Python | 11.4% |
-| Jupyter Notebook | 7.8% |
-| HTML | 7.2% |
-| Other | 14.6% |
-
-| Month (UTC) | Public commits |
-| :--- | ---: |
-| 2025-11 | 8 |
-| 2025-12 | 0 |
-| 2026-01 | 0 |
-| 2026-02 | 0 |
-| 2026-03 | 0 |
-| 2026-04 | 12 |
-| 2026-05 | 2 |
-| 2026-06 | 0 |
-| 2026-07 | 0 |
-| 2026-08 | 0 |
-| 2026-09 | 0 |
-| 2026-10 | 16 |
-
-| Public project | Last push (UTC) |
-| :--- | :--- |
-| [StreamVision](https://github.com/arifhasnat3po/StreamVision) | 2026-10-12 |
-| [pixelpair-plugin](https://github.com/arifhasnat3po/pixelpair-plugin) | 2026-10-12 |
-| [portfolio.io](https://github.com/arifhasnat3po/portfolio.io) | 2026-05-20 |
-| [me](https://github.com/arifhasnat3po/me) | 2025-11-08 |
-
-Refreshed **13 Oct 2026** from GitHub's public API. Repository, star, and language charts use original public repositories; forks and private repositories are excluded. Language percentages measure code bytes on default branches, not proficiency, authorship, or time spent. Small languages are grouped as Other.
-
-Public pull requests and issues are lifetime authored counts. Monthly commits use GitHub's public commit search, filtered by author and UTC commit date; only default branches are indexed. The current month is still in progress. These counts differ from GitHub's contribution calendar. This profile and the snake automation are omitted from the recent-project list.
-
-This section refreshes weekly through [GitHub Actions](https://github.com/arifhasnat3po/arifhasnat3po/actions/workflows/profile.yml). [How to maintain it](docs/profile-maintenance.md).
-
-</details>
 <!-- PROFILE-SNAPSHOT:END -->
 
 ---
