@@ -50,14 +50,14 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 <picture>
 
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-languages-dark.svg" />
-  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 29.8%, PHP 16.8%, CSS 12.5%, Python 11.4%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.6%. Language shares by code bytes in original public repositories." />
+  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 29.9%, PHP 16.8%, CSS 12.5%, Python 11.3%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.6%. Language shares by code bytes in original public repositories." />
 </picture>
 </p>
 
 <picture>
 <source media="(prefers-reduced-motion: reduce)" srcset="assets/github-activity-animated-static.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-animated-dark.svg" />
-  <img src="assets/github-activity-animated-light.svg" width="860" alt="46 public commits from 2025-11-01 to 2026-10-12. Public default-branch commits; current month is partial." />
+  <img src="assets/github-activity-animated-light.svg" width="860" alt="48 public commits from 2025-11-01 to 2026-10-12. Public default-branch commits; current month is partial." />
 </picture>
 
 **28 original public repositories · 10 primary languages · PixelPair v0.9.4**
