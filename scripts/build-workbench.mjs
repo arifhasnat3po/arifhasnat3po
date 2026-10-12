@@ -4,15 +4,15 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const stations=[['Explore','Find the question','#73d7ef'],['Build','Make it work','#bca2ff'],['Test','Try the edge cases','#63dfad'],['Ship','Leave good docs','#ffc47c']];
 const stars=Array.from({length:48},(_,i)=>`<circle class="star" cx="${18+(i*137)%822}" cy="${18+(i*53)%180}" r="${i%4===0?1.4:.7}" fill="#b4c8e8" opacity="${i%3===0?.65:.25}" style="animation-delay:-${i%5}s"/>`).join('');
-const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330" role="img" aria-labelledby="title desc">
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="860" height="245" viewBox="0 0 860 245" role="img" aria-labelledby="title desc">
 <title id="title">From packets to products — a small world of ideas</title>
 <desc id="desc">A packet explores a globe, visits a glowing build station, passes a shield checkpoint, and launches as a rocket. Explore: find the question. Build: make it work. Test: try the edge cases. Ship: leave good docs. Animation stops for reduced motion.</desc>
-<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#101829"/><stop offset="1" stop-color="#0d1117"/></linearGradient><clipPath id="edge"><rect x="1" y="1" width="858" height="328" rx="8"/></clipPath></defs>
-<rect x=".5" y=".5" width="859" height="329" rx="8" fill="url(#sky)" stroke="#303b4c"/>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#101829"/><stop offset="1" stop-color="#0d1117"/></linearGradient><clipPath id="edge"><rect x="1" y="1" width="858" height="243" rx="8"/></clipPath></defs>
+<rect x=".5" y=".5" width="859" height="244" rx="8" fill="url(#sky)" stroke="#303b4c"/>
 <g clip-path="url(#edge)">${stars}
 <path d="M20 220 100 187 180 217 255 200 345 229 430 205 505 223 610 188 701 217 788 195 850 221V330H20Z" fill="#151f2f" opacity=".6"/>
 <path d="M106 184C180 222 240 146 322 184S460 222 538 184 680 146 754 184" fill="none" stroke="#36455d" stroke-width="2" stroke-dasharray="3 7"/>
-${stations.map(([title,note,color],i)=>`<g transform="translate(${106+i*216} 184)"><ellipse cy="3" rx="60" ry="17" fill="#101724" stroke="${color}" stroke-opacity=".4"/><path d="M-54 8-25 37 6 44 48 11" fill="#1a2940" stroke="#2c3e57"/><path d="M-25 37-9 16 6 44 23 12" fill="none" stroke="#34465d"/><ellipse cy="-2" rx="53" ry="11" fill="#1c3040"/><text y="82" text-anchor="middle" fill="${color}" font-size="22" font-weight="600">${title}</text></g>`).join('')}
+${stations.map(([title,note,color],i)=>`<g transform="translate(${106+i*216} 184)"><ellipse cy="3" rx="60" ry="17" fill="#101724" stroke="${color}" stroke-opacity=".4"/><path d="M-54 8-25 37 6 44 48 11" fill="#1a2940" stroke="#2c3e57"/><path d="M-25 37-9 16 6 44 23 12" fill="none" stroke="#34465d"/><ellipse cy="-2" rx="53" ry="11" fill="#1c3040"/></g>`).join('')}
 <!-- Explore: a little rotating world and satellite. -->
 <g transform="translate(106 122)"><g class="world"><circle r="34" fill="#153d54" stroke="#73d7ef" stroke-width="2"/><ellipse rx="15" ry="34" fill="none" stroke="#73d7ef" opacity=".4"/><path d="M-32-10H32M-32 11H32M-5-32V32" fill="none" stroke="#73d7ef" opacity=".3"/><path d="m-19-22 15-5 11 10-9 12-12-2-8 10-6-12Zm28 29 17 2-6 17-12 6-8-13Z" fill="#69ceaf"/><g class="satellite"><path d="M-49 0h10m78 0h10" stroke="#73d7ef"/><rect x="43" y="-4" width="8" height="8" rx="1" fill="#e2faff"/></g></g></g>
 <!-- Build: a tiny workshop with an active terminal. -->
@@ -31,6 +31,6 @@ ${stations.map(([title,note,color],i)=>`<g transform="translate(${106+i*216} 184
 @keyframes deliver{0%,5%{transform:translate(106px,184px);opacity:0}8%{opacity:1}20%{transform:translate(214px,184px)}32%{transform:translate(322px,184px)}44%{transform:translate(430px,198px)}56%{transform:translate(538px,184px)}65%{transform:translate(646px,170px)}73%{transform:translate(754px,184px);opacity:1}78%,100%{transform:translate(754px,184px);opacity:0}}
 @media(prefers-reduced-motion:reduce){.star,.world,.satellite,.radar,.cursor,.block,.check,.rocket,.flame,.packet{animation:none}.packet{display:none}}
 </style></svg>\n`;
-await fs.writeFile(path.join(root,'assets/workbench-world.svg'),svg);
-await fs.writeFile(path.join(root,'assets/workbench-world-static.svg'),svg.replaceAll(/animation:[^;}]+/g,'animation:none').replace('<style>','<style>.packet{display:none}'));
+await fs.writeFile(path.join(root,'assets/workbench-scene.svg'),svg);
+await fs.writeFile(path.join(root,'assets/workbench-scene-static.svg'),svg.replaceAll(/animation:[^;}]+/g,'animation:none').replace('<style>','<style>.packet{display:none}'));
 console.log('Built animated mini-world and still fallback.');
