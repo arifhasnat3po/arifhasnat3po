@@ -143,8 +143,8 @@ Databases            ████████████░░░░░░░�
 ## From packets to products
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/workbench-static.svg" />
-  <img src="assets/workbench.svg" width="100%" alt="The build loop: explore an idea, build a prototype, test the details, then ship and learn." />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/workbench-world-static.svg" />
+  <img src="assets/workbench-world.svg" width="100%" alt="An animated mini-world: explore a globe, build at a workshop, pass a test checkpoint, and launch a rocket." />
 </picture>
 
 My repositories connect a few different worlds: **networking labs**, **Python experiments**, **web applications**, and **WordPress tools**. I like the point where understanding how something works turns into making something useful.
