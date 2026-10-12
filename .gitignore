@@ -1,0 +1,10 @@
+.env
+.env.*
+node_modules/
+.cache/
+*.log
+PROMPT*.md
+*PLAN*.md
+STATUS.md
+DECISIONS.md
+reports/
