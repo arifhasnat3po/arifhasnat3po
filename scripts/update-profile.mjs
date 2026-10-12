@@ -60,7 +60,7 @@ ${picture('github-stats',`${displayedStats.map(([label,value])=>`${label}: ${val
 ${picture('github-languages',languages.rows.map(row=>`${row.name} ${row.percent.toFixed(1)}%`).join(', ')+'. Language shares by code bytes in original public repositories.',420)}
 </p>
 
-${picture('github-activity',`${totalCommits} public commits from ${months[0].from} to ${months.at(-1).to}. Public default-branch commits; current month is partial.`,860)}
+${picture('github-activity-animated',`${totalCommits} public commits from ${months[0].from} to ${months.at(-1).to}. Public default-branch commits; current month is partial.`,860)}
 
 **${snapshot.repositories} original public repositories · ${snapshot.languages} primary languages · PixelPair ${snapshot.latestRelease}**
 
@@ -72,8 +72,8 @@ for (const [name,render,value] of [['github-stats',statsSvg,stats],['github-lang
   await fs.writeFile(path.join(root,`assets/${name}-light.svg`),render(value));
   await fs.writeFile(path.join(root,`assets/${name}-dark.svg`),render(value,true));
 }
-await fs.writeFile(path.join(root,'assets/github-activity-light.svg'),activitySvg(months,date));
-await fs.writeFile(path.join(root,'assets/github-activity-dark.svg'),activitySvg(months,date,true));
+await fs.writeFile(path.join(root,'assets/github-activity-animated-light.svg'),activitySvg(months,date));
+await fs.writeFile(path.join(root,'assets/github-activity-animated-dark.svg'),activitySvg(months,date,true));
 await fs.writeFile(path.join(root, 'README.md'), updated);
 await buildCover(months);
 console.log(`Updated public dashboard: ${snapshot.repositories} repositories, ${languages.rows.length} language groups, ${totalCommits} public commits.`);
