@@ -1,8 +1,3 @@
-<!--
-  GitHub Profile README for arifhasnat3po
-  Copy this file into a repository named: arifhasnat3po/arifhasnat3po
--->
-
 <div align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-cover-static.svg" />
@@ -11,8 +6,6 @@
 </div>
 
 <div align="center">
-
-### Building intelligent systems, securing networks, and learning in public.
 
 <a href="mailto:arifhasnat83@gmail.com">
   <img src="https://img.shields.io/badge/Email-arifhasnat83%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
