@@ -1,7 +1,7 @@
 import { escapeXml as e } from './profile-data.mjs';
 
 const colors = ['#f1df64','#9c80c9','#638dc9','#58bdbb','#b6cc62','#dc6748','#a7a4b9'];
-const theme = () => ({bg:'#141321',ink:'#dedde5',muted:'#a5d8dc',border:'#302d40',accent:'#e65e99',track:'#292637'});
+const theme = () => ({bg:'#0d1117',ink:'#e6edf3',muted:'#a7b6c8',border:'#30363d',accent:'#56c781',track:'#212b36'});
 const number = value => new Intl.NumberFormat('en-US').format(value);
 function frame(width,height,title,description,dark,body) {
   const c=theme(dark);
@@ -63,12 +63,12 @@ export function activitySvg(months,date,dark=false) {
     const line=points.map(([x,y],i)=>`${i?'L':'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
     return `<text x="28" y="42" fill="${c.muted}" font-size="22" font-weight="600">Public commit activity</text>
 <text x="28" y="71" fill="${c.muted}" font-size="16">${start.label} 20${start.year} – ${last.label} 20${last.year} · monthly public commits</text>
-<text x="832" y="44" text-anchor="end" fill="${c.accent}" font-size="30" font-weight="600">${number(total)}</text>
+<text x="832" y="44" text-anchor="end" fill="${c.accent}" font-size="26" font-weight="600">${number(total)}</text>
 <text x="832" y="71" text-anchor="end" fill="${c.muted}" font-size="14">in this window</text>
 ${[0,1,2,3,4].map(i=>{const y=plot.y+plot.height-i*plot.height/4;return `<path d="M${plot.x} ${y}h${plot.width}" stroke="${c.border}" stroke-dasharray="3 5"/><text x="45" y="${y+5}" text-anchor="end" fill="${c.muted}" font-size="13">${number(scale*i/4)}</text>`;}).join('')}
-<path d="${line} L${points.at(-1)[0]} ${plot.y+plot.height} L${points[0][0]} ${plot.y+plot.height}Z" fill="#49c96d" opacity=".4"/>
+<path d="${line} L${points.at(-1)[0]} ${plot.y+plot.height} L${points[0][0]} ${plot.y+plot.height}Z" fill="#49c96d" opacity=".65"/>
 <path d="${line}" stroke="#49c96d" stroke-width="2" fill="none" stroke-linejoin="round"/>
-${months.map((month,i)=>`<circle cx="${points[i][0]}" cy="${points[i][1]}" r="4" fill="${c.accent}"/><text x="${points[i][0]}" y="${Math.max(plot.y-10,points[i][1]-13)}" text-anchor="middle" fill="${c.ink}" font-size="14">${month.count||''}</text><text x="${points[i][0]}" y="284" text-anchor="middle" fill="${c.muted}" font-size="14">${month.label}</text>`).join('')}
+${months.map((month,i)=>`<text x="${points[i][0]}" y="${Math.max(plot.y-10,points[i][1]-13)}" text-anchor="middle" fill="${c.ink}" font-size="14">${month.count||''}</text><text x="${points[i][0]}" y="284" text-anchor="middle" fill="${c.muted}" font-size="14">${month.label}</text>`).join('')}
 <text x="28" y="318" fill="${c.muted}" font-size="13">Public default branches · ${last.label} is in progress · Updated ${e(date)}</text>`;
   });
 }

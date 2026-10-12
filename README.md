@@ -6,7 +6,7 @@
 <div align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-cover-static.svg" />
-    <img src="assets/profile-cover.svg" width="100%" alt="Arif Hasnat — machine learning, cybersecurity, networking, and Python. Chittagong, Bangladesh. Public commit activity over 12 months." />
+    <img src="assets/profile-cover.svg" width="100%" alt="Arif Hasnat — machine learning, cybersecurity, networking, and Python. Animated black hole, galaxy, and stars." />
   </picture>
 </div>
 
@@ -31,7 +31,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/arifhasnat3po?label=Followers&style=flat-square&color=blue" alt="GitHub followers" />
-<img src="https://img.shields.io/github/stars/arifhasnat3po?label=Stars&style=flat-square&color=yellow" alt="GitHub stars" />
 
 </div>
 
@@ -42,11 +41,11 @@
 I am a software and technology learner focused on **Machine Learning**, **Cybersecurity**, and **Computer Networking**.  
 I enjoy turning complex ideas into clean, useful, and reliable projects.
 
-- 🔭 Currently working on: **Machine Learning projects**
-- 🌱 Currently learning: **CCNA, Network Security, and Machine Learning**
-- 💬 Ask me about: **Networking, Cybersecurity, Python, and ML basics**
-- 🎯 Goal: Build practical tools that solve real problems
-- 📫 Reach me at: **[arifhasnat83@gmail.com](mailto:arifhasnat83@gmail.com)**
+- Currently working on: **Machine Learning projects**
+- Currently learning: **CCNA, Network Security, and Machine Learning**
+- Ask me about: **Networking, Cybersecurity, Python, and ML basics**
+- Goal: Build practical tools that solve real problems
+- Reach me at: **[arifhasnat83@gmail.com](mailto:arifhasnat83@gmail.com)**
 
 ---
 

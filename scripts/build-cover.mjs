@@ -1,40 +1,53 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 
-export async function buildCover(months) {
-  const maximum=Math.max(1,...months.map(month=>month.count));
-  const points=months.map((month,i)=>[478+i*30,145-month.count/maximum*70]);
-  const line=points.map(([x,y],i)=>`${i?'L':'M'}${x} ${y.toFixed(1)}`).join(' ');
-  const total=months.reduce((sum,month)=>sum+month.count,0);
-  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-labelledby="title desc">
-<title id="title">Arif Hasnat — GitHub profile</title>
-<desc id="desc">Machine learning, cybersecurity, and networking. Chittagong, Bangladesh. ${total} public commits in the displayed 12-month window. The graph draws once, then stays still.</desc>
-<rect x=".5" y=".5" width="859" height="209" rx="5" fill="#141321" stroke="#302d40"/>
-<text x="28" y="47" fill="#e65e99" font-size="26" font-weight="600">Arif Hasnat</text>
-<text x="28" y="78" fill="#a5d8dc" font-size="15">@arifhasnat3po</text>
-<text x="28" y="118" fill="#dedde5" font-size="15">Machine learning · Cybersecurity</text>
-<text x="28" y="143" fill="#dedde5" font-size="15">Networking · Python</text>
-<text x="28" y="183" fill="#a4a2b7" font-size="13">Chittagong, Bangladesh</text>
-<path d="M431 27v156" stroke="#302d40"/>
-<text x="478" y="41" fill="#a5d8dc" font-size="14">Public commits</text>
-<text x="809" y="41" text-anchor="end" fill="#dedde5" font-size="14">${total} / 12 months</text>
-<path d="M478 145h330M478 110h330M478 75h330" stroke="#292637" stroke-dasharray="2 4"/>
-<path d="${line} L808 145L478 145Z" fill="#49c96d" opacity=".12"/>
-<path class="draw" d="${line}" pathLength="1" fill="none" stroke="#49c96d" stroke-width="2" stroke-linejoin="round"/>
-<text x="478" y="183" fill="#a4a2b7" font-size="12">${months[0].key}</text>
-<text x="808" y="183" text-anchor="end" fill="#a4a2b7" font-size="12">${months.at(-1).key} · in progress</text>
-<style>text{font-family:Arial,Helvetica,sans-serif}.draw{animation:draw 2.5s ease-out both}@keyframes draw{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.draw{animation:none}}</style></svg>\n`;
+export async function buildCover() {
+  let seed=73;
+  const random=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
+  const stars=Array.from({length:170},(_,i)=>{
+    const x=(random()*860).toFixed(1),y=(random()*300).toFixed(1),r=(.35+random()*.85).toFixed(2);
+    return `<circle cx="${x}" cy="${y}" r="${r}" fill="${i%4?'#c8d4ef':'#fff0d9'}" opacity="${(.2+random()*.6).toFixed(2)}"${i%11===0?' class="star"':''}/>`;
+  }).join('');
+  const galaxy=Array.from({length:390},(_,i)=>{
+    const arm=i%3, t=random()*Math.PI*3, radius=16+t*15, scatter=(random()-.5)*22;
+    const x=570+Math.cos(t+arm*2.094)*radius+scatter;
+    const y=143+Math.sin(t+arm*2.094)*radius*.38+scatter*.4;
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(.3+random()*.8).toFixed(1)}" fill="${i%3?'#b5a7de':'#e7c2a6'}" opacity="${(.1+random()*.4).toFixed(2)}"/>`;
+  }).join('');
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" role="img" aria-labelledby="title desc">
+<title id="title">Arif Hasnat — a little corner of the universe</title>
+<desc id="desc">An animated black hole with a warm accretion disk, a spiral galaxy, and quietly twinkling stars. Arif Hasnat, machine learning, security, and networks. Reduced motion shows a still image.</desc>
+<defs>
+<radialGradient id="space"><stop stop-color="#222038"/><stop offset="1" stop-color="#080d17"/></radialGradient>
+<radialGradient id="halo"><stop offset=".38" stop-color="#000" stop-opacity="0"/><stop offset=".52" stop-color="#e8ad79" stop-opacity=".22"/><stop offset="1" stop-color="#e8ad79" stop-opacity="0"/></radialGradient>
+<linearGradient id="disk"><stop stop-color="#927da8" stop-opacity=".2"/><stop offset=".4" stop-color="#efbe8e"/><stop offset=".65" stop-color="#ffe9c2"/><stop offset="1" stop-color="#927da8" stop-opacity=".2"/></linearGradient>
+<clipPath id="bounds"><rect width="860" height="300" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bounds)">
+<rect width="860" height="300" fill="url(#space)"/>
+${stars}
+<g opacity=".7">${galaxy}</g>
+<circle cx="570" cy="143" r="115" fill="url(#halo)"/>
+<g transform="translate(570 143) rotate(-14)">
+<ellipse rx="165" ry="38" fill="none" stroke="url(#disk)" stroke-width="16" opacity=".14"/>
+<ellipse rx="152" ry="30" fill="none" stroke="url(#disk)" stroke-width="3"/>
+<g transform="scale(1 .22)"><circle class="orbit" r="145" fill="none" stroke="#f1c99e" stroke-width="6" stroke-dasharray="100 95 25 130" opacity=".65"/></g>
+<circle r="47" fill="#060910" stroke="#ecc6a2" stroke-width="1.5"/>
+<path d="M-54 0C-54-72 54-72 54 0" fill="none" stroke="#ecc6a2" stroke-width="2" opacity=".55"/>
+<path d="M-152 0C-148 40 148 40 152 0" fill="none" stroke="url(#disk)" stroke-width="7"/>
+<path d="M-149 2C-130 31 130 31 149 2" fill="none" stroke="#fff0d8" stroke-width="1" opacity=".75"/>
+</g>
+<text x="30" y="243" fill="#e7eaf2" font-size="22" font-weight="600">Arif Hasnat</text>
+<text x="30" y="272" fill="#acb7cb" font-size="14">Machine learning · Security · Networks</text>
+<text x="830" y="272" fill="#acb7cb" text-anchor="end" font-size="12">@arifhasnat3po</text>
+</g>
+<style>text{font-family:Arial,Helvetica,sans-serif}.orbit{animation:orbit 26s linear infinite;transform-origin:0 0}.star{animation:twinkle 7s ease-in-out infinite alternate}.star:nth-child(odd){animation-delay:-4s}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes twinkle{to{opacity:.18}}@media(prefers-reduced-motion:reduce){.orbit,.star{animation:none}}</style></svg>\n`;
   await fs.writeFile(path.join(root,'assets/profile-cover.svg'),svg);
-  await fs.writeFile(path.join(root,'assets/profile-cover-static.svg'),svg.replace('animation:draw 2.5s ease-out both','animation:none'));
+  await fs.writeFile(path.join(root,'assets/profile-cover-static.svg'),svg.replaceAll(/animation:(?:orbit|twinkle)[^;}]+/g,'animation:none'));
 }
-
-if (process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
-  const readme=await fs.readFile(path.join(root,'README.md'),'utf8');
-  const months=[...readme.matchAll(/^\| (\d{4}-\d{2}) \| (\d+) \|/gm)].map(match=>({key:match[1],count:Number(match[2])}));
-  if(months.length!==12) throw new Error('Expected 12 verified monthly counts in the README.');
-  await buildCover(months);
-  console.log('Built compact profile header from verified public activity.');
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
+  await buildCover();
+  console.log('Built animated space cover and reduced-motion fallback.');
 }
