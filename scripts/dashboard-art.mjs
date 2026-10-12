@@ -50,13 +50,13 @@ ${languages.rows.length?'':`<text x="26" y="176" fill="${c.muted}" font-size="16
   });
 }
 
-export function activitySvg(months,date,dark=false) {
+export function activitySvg(months,date,dark=false,reducedMotion=false) {
   const total=months.reduce((sum,month)=>sum+month.count,0);
   const highest=Math.max(1,...months.map(month=>month.count));
   const scale=highest<=4?4:Math.ceil(highest/4)*4;
   const start=months[0],last=months.at(-1);
   const description=months.map(m=>`${m.label} 20${m.year}: ${m.count} commits`).join('. ');
-  return frame(860,340,'Public commits by month',description+'. GitHub commit-search results from public default branches. Current month is partial.',dark,c=>{
+  const svg=frame(860,340,'Public commits by month',description+'. GitHub commit-search results from public default branches. Current month is partial.',dark,c=>{
     const plot={x:60,y:129,width:772,height:132};
     const step=plot.width/12;
     const points=months.map((month,i)=>[plot.x+step*(i+.5),plot.y+plot.height-month.count/scale*plot.height]);
@@ -85,4 +85,5 @@ ${[0,1,2,3,4].map(i=>{const y=plot.y+plot.height-i*plot.height/4;return `<path d
 ${months.map((month,i)=>`<text x="${points[i][0]}" y="${Math.max(plot.y-10,points[i][1]-13)}" text-anchor="middle" fill="${c.ink}" font-size="14">${month.count||''}</text><text x="${points[i][0]}" y="284" text-anchor="middle" fill="${c.muted}" font-size="14">${month.label}</text>`).join('')}
 <text x="28" y="318" fill="${c.muted}" font-size="13">Public default branches · ${last.label} is in progress · Updated ${e(date)}</text>`;
   });
+  return reducedMotion ? svg.replaceAll(/animation:[^;}]+/g,'animation:none').replace('<style>','<style>.activity-traveler,.activity-pulse{display:none}') : svg;
 }

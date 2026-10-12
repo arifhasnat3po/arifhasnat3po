@@ -52,6 +52,7 @@ if (![stats.stars,stats.followers].every(value=>Number.isSafeInteger(value)&&val
 const totalCommits = months.reduce((sum,month)=>sum+month.count,0);
 const displayedStats=visibleStats(stats);
 const picture = (name,alt,width) => `<picture>
+${name==='github-activity-animated'?'<source media="(prefers-reduced-motion: reduce)" srcset="assets/github-activity-animated-static.svg" />':''}
   <source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg" />
   <img src="assets/${name}-light.svg" width="${width}" alt="${escapeXml(alt)}" />
 </picture>`;
@@ -75,5 +76,6 @@ for (const [name,render,value] of [['github-stats',statsSvg,stats],['github-lang
 await fs.writeFile(path.join(root,'assets/github-activity-animated-light.svg'),activitySvg(months,date));
 await fs.writeFile(path.join(root,'assets/github-activity-animated-dark.svg'),activitySvg(months,date,true));
 await fs.writeFile(path.join(root, 'README.md'), updated);
+await fs.writeFile(path.join(root,'assets/github-activity-animated-static.svg'),activitySvg(months,date,false,true));
 await buildCover(months);
 console.log(`Updated public dashboard: ${snapshot.repositories} repositories, ${languages.rows.length} language groups, ${totalCommits} public commits.`);
