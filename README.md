@@ -9,10 +9,14 @@
 
 <div align="center">
 <p>
-<a href="mailto:arifhasnat83@gmail.com"><img src="https://img.shields.io/badge/Email-30363d?style=flat&amp;logo=gmail&amp;logoColor=white" alt="Email" /></a>
-<a href="https://linkedin.com/in/arif-hasnat"><img src="https://img.shields.io/badge/LinkedIn-30363d?style=flat&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
-<a href="https://twitter.com/arifhasnat7"><img src="https://img.shields.io/badge/X-30363d?style=flat&amp;logo=x&amp;logoColor=white" alt="X" /></a>
-<a href="https://kaggle.com/arifhasnatr2"><img src="https://img.shields.io/badge/Kaggle-30363d?style=flat&amp;logo=kaggle&amp;logoColor=white" alt="Kaggle" /></a>
+<a href="mailto:arifhasnat83@gmail.com">arifhasnat83@gmail.com</a>
+</p>
+<p>
+<a href="https://linkedin.com/in/arif-hasnat">LinkedIn: arif-hasnat</a>
+&nbsp; · &nbsp;
+<a href="https://twitter.com/arifhasnat7">X: @arifhasnat7</a>
+&nbsp; · &nbsp;
+<a href="https://kaggle.com/arifhasnatr2">Kaggle: arifhasnatr2</a>
 </p>
 <p>
 <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&amp;label=Profile%20views&amp;color=536477&amp;style=flat" alt="Profile views" />
