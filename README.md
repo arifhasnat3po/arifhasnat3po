@@ -60,13 +60,13 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-languages-dark.svg" />
-  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 29.7%, PHP 16.8%, CSS 12.5%, Python 11.4%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.6%. Language shares by code bytes in original public repositories." />
+  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 30.0%, PHP 16.8%, CSS 12.5%, Python 11.3%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.6%. Language shares by code bytes in original public repositories." />
 </picture>
 </p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-dark.svg" />
-  <img src="assets/github-activity-light.svg" width="860" alt="31 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
+  <img src="assets/github-activity-light.svg" width="860" alt="34 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
 </picture>
 
 **28 original public repositories · 10 primary languages · PixelPair v0.9.4**
@@ -80,14 +80,14 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 | Followers | 10 |
 | Public pull requests authored | 1 |
 | Public issues opened | 0 |
-| Public commits in the chart's date window | 31 |
+| Public commits in the chart's date window | 34 |
 
 | Language | Share of code bytes |
 | :--- | ---: |
-| JavaScript | 29.7% |
+| JavaScript | 30.0% |
 | PHP | 16.8% |
 | CSS | 12.5% |
-| Python | 11.4% |
+| Python | 11.3% |
 | Jupyter Notebook | 7.8% |
 | HTML | 7.2% |
 | Other | 14.6% |
@@ -105,13 +105,13 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 0 |
-| 2026-10 | 9 |
+| 2026-10 | 12 |
 
 | Public project | Last push (UTC) |
 | :--- | :--- |
+| [StreamVision](https://github.com/arifhasnat3po/StreamVision) | 2026-10-12 |
 | [pixelpair-plugin](https://github.com/arifhasnat3po/pixelpair-plugin) | 2026-10-12 |
 | [portfolio.io](https://github.com/arifhasnat3po/portfolio.io) | 2026-05-20 |
-| [StreamVision](https://github.com/arifhasnat3po/StreamVision) | 2025-11-25 |
 | [me](https://github.com/arifhasnat3po/me) | 2025-11-08 |
 
 Refreshed **13 Oct 2026** from GitHub's public API. Repository, star, and language charts use original public repositories; forks and private repositories are excluded. Language percentages measure code bytes on default branches, not proficiency, authorship, or time spent. Small languages are grouped as Other.
