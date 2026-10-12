@@ -3,6 +3,7 @@
 The profile is a README, an animated SVG cover, local SVG charts, and small Node scripts. No npm dependencies or personal access tokens are required in GitHub Actions.
 
 - Edit project descriptions and the lab drawers directly in `README.md`.
+- Summary stats with a zero count are hidden in the card, its accessible description, and the stats table. They appear automatically after a refresh reports a positive count. Monthly activity retains zero months to keep the timeline accurate.
 - Keep the `PROFILE-SNAPSHOT` start/end comments. The updater replaces only the content between those comments; the rest of the README stays intact.
 - Run `node scripts/update-profile.mjs` to refresh the public stats, language shares, and monthly commit chart. API errors or incomplete search results fail the refresh before writing files. Local unauthenticated runs are paced for GitHub's search limit; an existing `GITHUB_TOKEN` environment variable can also be used.
 - Run `node scripts/build-workbench.mjs` after editing the custom workbench artwork. The static variant is used for reduced-motion preferences.

@@ -56,7 +56,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-stats-dark.svg" />
-  <img src="assets/github-stats-light.svg" width="420" alt="Original public repositories: 28; stars on original public repositories: 0; followers: 10; public pull requests: 1; public issues opened: 0. On GitHub since 2020." />
+  <img src="assets/github-stats-light.svg" width="420" alt="Original public repos: 28; Followers: 10; Public pull requests: 1. On GitHub since 2020." />
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-languages-dark.svg" />
@@ -66,7 +66,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-dark.svg" />
-  <img src="assets/github-activity-light.svg" width="860" alt="34 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
+  <img src="assets/github-activity-light.svg" width="860" alt="35 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
 </picture>
 
 **28 original public repositories · 10 primary languages · PixelPair v0.9.4**
@@ -76,11 +76,10 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 
 | GitHub stats | Count |
 | :--- | ---: |
-| Stars on original public repositories | 0 |
+| Original public repos | 28 |
 | Followers | 10 |
-| Public pull requests authored | 1 |
-| Public issues opened | 0 |
-| Public commits in the chart's date window | 34 |
+| Public pull requests | 1 |
+| Public commits in the chart's date window | 35 |
 
 | Language | Share of code bytes |
 | :--- | ---: |
@@ -105,7 +104,7 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 0 |
-| 2026-10 | 12 |
+| 2026-10 | 13 |
 
 | Public project | Last push (UTC) |
 | :--- | :--- |

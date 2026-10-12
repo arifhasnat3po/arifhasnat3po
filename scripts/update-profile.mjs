@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { summarize, replaceSnapshot, escapeXml, originalRepositories, summarizeLanguages, monthWindows, searchCount } from './profile-data.mjs';
-import { statsSvg, languagesSvg, activitySvg } from './dashboard-art.mjs';
+import { statsSvg, languagesSvg, activitySvg, visibleStats } from './dashboard-art.mjs';
 import { buildCover } from './build-cover.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -50,13 +50,16 @@ const stats = {
 };
 if (![stats.stars,stats.followers].every(value=>Number.isSafeInteger(value)&&value>=0)) throw new Error('Invalid public profile counts.');
 const totalCommits = months.reduce((sum,month)=>sum+month.count,0);
+const displayedStats=visibleStats(stats);
+const statsTable=[...displayedStats,["Public commits in the chart's date window",totalCommits]]
+  .filter(([,value])=>value>0).map(([label,value])=>`| ${label} | ${value} |`).join('\n');
 const picture = (name,alt,width) => `<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg" />
   <img src="assets/${name}-light.svg" width="${width}" alt="${escapeXml(alt)}" />
 </picture>`;
 const recent = snapshot.recent.map(repo => `| [${repo.name}](https://github.com/arifhasnat3po/${repo.name}) | ${repo.pushed} |`).join('\n');
 const content = `<p>
-${picture('github-stats',`Original public repositories: ${stats.repositories}; stars on original public repositories: ${stats.stars}; followers: ${stats.followers}; public pull requests: ${stats.pullRequests}; public issues opened: ${stats.issues}. On GitHub since ${stats.since}.`,420)}
+${picture('github-stats',`${displayedStats.map(([label,value])=>`${label}: ${value}`).join('; ')}. On GitHub since ${stats.since}.`,420)}
 ${picture('github-languages',languages.rows.map(row=>`${row.name} ${row.percent.toFixed(1)}%`).join(', ')+'. Language shares by code bytes in original public repositories.',420)}
 </p>
 
@@ -69,11 +72,7 @@ ${picture('github-activity',`${totalCommits} public commits from ${months[0].fro
 
 | GitHub stats | Count |
 | :--- | ---: |
-| Stars on original public repositories | ${stats.stars} |
-| Followers | ${stats.followers} |
-| Public pull requests authored | ${stats.pullRequests} |
-| Public issues opened | ${stats.issues} |
-| Public commits in the chart's date window | ${totalCommits} |
+${statsTable}
 
 | Language | Share of code bytes |
 | :--- | ---: |

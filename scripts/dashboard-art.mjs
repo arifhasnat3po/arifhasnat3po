@@ -12,8 +12,16 @@ ${body(c)}
 <style>text{font-family:Arial,Helvetica,sans-serif}</style></svg>\n`;
 }
 
+export const visibleStats = stats => [
+  ['Original public repos',stats.repositories],
+  ['Stars (original repos)',stats.stars],
+  ['Followers',stats.followers],
+  ['Public pull requests',stats.pullRequests],
+  ['Public issues opened',stats.issues],
+].filter(([,value])=>value>0);
+
 export function statsSvg(stats,dark=false) {
-  const rows=[['Original public repos',stats.repositories],['Stars (original repos)',stats.stars],['Followers',stats.followers],['Public pull requests',stats.pullRequests],['Public issues opened',stats.issues]];
+  const rows=visibleStats(stats);
   const description=rows.map(([label,value])=>`${label}: ${value}`).join('. ')+`. On GitHub since ${stats.since}. Updated ${stats.date}.`;
   return frame(420,280,"Arif's GitHub stats",description,dark,c=>`
 <text x="26" y="36" fill="${c.accent}" font-size="20" font-weight="600">Arif Hasnat's GitHub stats</text>
