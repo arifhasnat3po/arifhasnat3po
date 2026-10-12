@@ -9,14 +9,14 @@
 
 <div align="center">
 <p>
-<a href="mailto:arifhasnat83@gmail.com">arifhasnat83@gmail.com</a>
+<a href="mailto:arifhasnat83@gmail.com"><img src="https://img.shields.io/static/v1?label=Email&amp;message=arifhasnat83%40gmail.com&amp;color=30363d&amp;labelColor=21262d&amp;style=flat&amp;logo=gmail&amp;logoColor=white" alt="Email: arifhasnat83@gmail.com" /></a>
+&nbsp;
+<a href="https://linkedin.com/in/arif-hasnat"><img src="https://img.shields.io/static/v1?label=LinkedIn&amp;message=arif-hasnat&amp;color=30363d&amp;labelColor=21262d&amp;style=flat&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn: arif-hasnat" /></a>
 </p>
 <p>
-<a href="https://linkedin.com/in/arif-hasnat">LinkedIn: arif-hasnat</a>
-&nbsp; · &nbsp;
-<a href="https://twitter.com/arifhasnat7">X: @arifhasnat7</a>
-&nbsp; · &nbsp;
-<a href="https://kaggle.com/arifhasnatr2">Kaggle: arifhasnatr2</a>
+<a href="https://twitter.com/arifhasnat7"><img src="https://img.shields.io/static/v1?label=X&amp;message=%40arifhasnat7&amp;color=30363d&amp;labelColor=21262d&amp;style=flat&amp;logo=x&amp;logoColor=white" alt="X: @arifhasnat7" /></a>
+&nbsp;
+<a href="https://kaggle.com/arifhasnatr2"><img src="https://img.shields.io/static/v1?label=Kaggle&amp;message=arifhasnatr2&amp;color=30363d&amp;labelColor=21262d&amp;style=flat&amp;logo=kaggle&amp;logoColor=white" alt="Kaggle: arifhasnatr2" /></a>
 </p>
 <p>
 <img src="https://komarev.com/ghpvc/?username=arifhasnat3po&amp;label=Profile%20views&amp;color=536477&amp;style=flat" alt="Profile views" />
