@@ -1,9 +1,11 @@
 const owner = 'arifhasnat3po';
 
+export const originalRepositories = repositories => repositories.filter(repo =>
+  repo.private === false && repo.fork === false && repo.owner?.login === owner
+);
+
 export function summarize(repositories, release, date) {
-  const originals = repositories.filter(repo =>
-    repo.private === false && repo.fork === false && repo.owner?.login === owner
-  );
+  const originals = originalRepositories(repositories);
   const projects = originals.filter(repo => !['arifhasnat3po', 'snake'].includes(repo.name));
   return {
     date,
@@ -19,6 +21,42 @@ export function summarize(repositories, release, date) {
   };
 }
 
+export function summarizeLanguages(repositories, languages) {
+  const totals = new Map();
+  for (const repo of originalRepositories(repositories)) {
+    for (const [name, bytes] of Object.entries(languages[repo.name] || {})) {
+      if (!Number.isSafeInteger(bytes) || bytes < 0) throw new Error('Invalid language byte count.');
+      if (bytes) totals.set(name, (totals.get(name) || 0) + bytes);
+    }
+  }
+  const sorted = [...totals].sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
+  const totalBytes = sorted.reduce((sum, [,bytes]) => sum+bytes, 0);
+  const rows = sorted.slice(0,6).map(([name,bytes]) => ({name,bytes}));
+  if (sorted.length>6) rows.push({name:'Other',bytes:sorted.slice(6).reduce((sum,[,bytes])=>sum+bytes,0)});
+  return {totalBytes,rows:rows.map(row=>({...row,percent:row.bytes/totalBytes*100}))};
+}
+
+export function monthWindows(now) {
+  const iso = date => date.toISOString().slice(0,10);
+  return Array.from({length:12},(_,index)=>{
+    const from = new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth()-11+index,1));
+    const lastDay = new Date(Date.UTC(from.getUTCFullYear(),from.getUTCMonth()+1,0));
+    return {
+      key:iso(from).slice(0,7),
+      label:new Intl.DateTimeFormat('en',{month:'short',timeZone:'UTC'}).format(from),
+      year:String(from.getUTCFullYear()).slice(-2),
+      from:iso(from),to:iso(lastDay>now?now:lastDay),
+    };
+  });
+}
+
+export function searchCount(response) {
+  if (response.incomplete_results !== false || !Number.isSafeInteger(response.total_count) || response.total_count < 0) {
+    throw new Error('Incomplete or invalid GitHub search results; existing dashboard retained.');
+  }
+  return response.total_count;
+}
+
 export function replaceSnapshot(readme, content) {
   const start = '<!-- PROFILE-SNAPSHOT:START -->';
   const end = '<!-- PROFILE-SNAPSHOT:END -->';
@@ -31,18 +69,3 @@ export function replaceSnapshot(readme, content) {
 export const escapeXml = value => String(value).replace(/[&<>"']/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;',
 })[character]);
-
-export function snapshotSvg(snapshot, dark = false) {
-  const c = dark
-    ? { bg: '#0d1724', panel: '#142234', ink: '#edf5ff', muted: '#adbed2', accent: '#92fe9d', border: '#2b4059' }
-    : { bg: '#f5f9fc', panel: '#ffffff', ink: '#162536', muted: '#496176', accent: '#126943', border: '#ccdbe6' };
-  const values = [snapshot.repositories, snapshot.languages, snapshot.latestRelease];
-  const labels = ['Original repositories', 'Repository languages', 'Latest PixelPair'];
-  const notes = ['Public, forks excluded', 'Primary language per repo', 'Published release'];
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-labelledby="title desc">
-<title id="title">Arif's public GitHub snapshot</title><desc id="desc">${escapeXml(values.map((value, i) => `${labels[i]}: ${value}`).join('. '))}. Refreshed ${escapeXml(snapshot.date)}.</desc>
-<rect width="900" height="210" rx="16" fill="${c.bg}"/>
-${values.map((value, i) => `<g transform="translate(${20 + i * 293},20)"><rect width="274" height="143" rx="10" fill="${c.panel}" stroke="${c.border}"/><text x="20" y="35" fill="${c.muted}" font-size="16">${labels[i]}</text><text x="20" y="84" fill="${c.ink}" font-size="38" font-weight="600">${escapeXml(value)}</text><text x="20" y="119" fill="${c.muted}" font-size="14">${notes[i]}</text></g>`).join('')}
-<circle cx="31" cy="185" r="4" fill="${c.accent}"/><text x="43" y="190" fill="${c.muted}" font-size="13">Public GitHub API · ${escapeXml(snapshot.date)} · Snapshot, not a skill score</text>
-<style>text{font-family:system-ui,-apple-system,Segoe UI,sans-serif}</style></svg>\n`;
-}

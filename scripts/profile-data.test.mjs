@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { summarize, replaceSnapshot, snapshotSvg } from './profile-data.mjs';
+import { summarize, replaceSnapshot } from './profile-data.mjs';
+import { languagesSvg } from './dashboard-art.mjs';
 
 const repo = (name, extras = {}) => ({ name, owner: { login: 'arifhasnat3po' }, private: false, fork: false, language: 'Python', pushed_at: '2026-10-01T00:00:00Z', ...extras });
 
@@ -34,7 +35,7 @@ test('refresh preserves all text outside the generated block, including existing
 });
 
 test('generated artwork escapes API text and has an accessible description', () => {
-  const svg = snapshotSvg({ repositories: 2, languages: 1, latestRelease: '<script>', date: '13 Oct 2026' });
+  const svg = languagesSvg({ totalBytes: 1, rows:[{ name:'<script>',bytes:1,percent:100 }] });
   assert.ok(svg.includes('&lt;script&gt;'));
   assert.ok(!svg.includes('<script>'));
   assert.ok(svg.includes('aria-labelledby="title desc"'));

@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: '24'
-      - run: node --test scripts/profile-data.test.mjs
+      - run: node --test scripts/*.test.mjs
       - run: node scripts/check-profile.mjs
 
   refresh:
@@ -46,7 +46,7 @@ jobs:
       - run: node scripts/check-profile.mjs
       - name: Save changed snapshot only
         run: |
-          git add README.md assets/github-snapshot-light.svg assets/github-snapshot-dark.svg
+          git add README.md assets/github-stats-*.svg assets/github-languages-*.svg assets/github-activity-*.svg
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

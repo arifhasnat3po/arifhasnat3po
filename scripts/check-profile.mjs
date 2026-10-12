@@ -25,6 +25,7 @@ for (const match of readme.matchAll(/href="#([^"]+)"/g)) {
 }
 assert.ok(!readme.includes('The public snapshot is being prepared.'), 'Generate the real snapshot before publishing.');
 for (const file of await fs.readdir(path.join(root, 'assets'))) {
+  if (!file.endsWith('.svg')) continue;
   const content = await fs.readFile(path.join(root, 'assets', file), 'utf8');
   assert.ok(content.startsWith('<svg '), `${file}: expected SVG`);
   assert.ok(content.includes('<title') && content.includes('<desc'), `${file}: needs accessible text`);

@@ -1,17 +1,10 @@
-<p align="center">
-  <a href="#selected-builds">Selected builds</a> &nbsp;·&nbsp;
-  <a href="#public-github-snapshot">GitHub snapshot</a> &nbsp;·&nbsp;
-  <a href="#inside-the-lab">Inside the lab</a> &nbsp;·&nbsp;
-  <a href="#lets-build-something-useful">Say hello</a>
-</p>
-
 <!--
   GitHub Profile README for arifhasnat3po
   Copy this file into a repository named: arifhasnat3po/arifhasnat3po
 -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=220&section=header&text=Arif%20Hasnat&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Machine%20Learning%20%7C%20Cybersecurity%20%7C%20Networking&descAlignY=58&descSize=18" alt="Arif Hasnat profile banner" />
+  <img src="assets/profile-cover.png" width="100%" alt="Arif Hasnat — Machine learning, cybersecurity, and networking. Curiosity into code. An illustrated connected developer workbench." />
 </div>
 
 <div align="center">
@@ -51,6 +44,81 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 - 💬 Ask me about: **Networking, Cybersecurity, Python, and ML basics**
 - 🎯 Goal: Build practical tools that solve real problems
 - 📫 Reach me at: **[arifhasnat83@gmail.com](mailto:arifhasnat83@gmail.com)**
+
+---
+
+## Public GitHub snapshot
+
+<!-- PROFILE-SNAPSHOT:START -->
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-stats-dark.svg" />
+  <img src="assets/github-stats-light.svg" width="420" alt="Original public repositories: 28; stars on original public repositories: 0; followers: 10; public pull requests: 1; public issues opened: 0. On GitHub since 2020." />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-languages-dark.svg" />
+  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 29.5%, PHP 16.9%, CSS 12.5%, Python 11.4%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.7%. Language shares by code bytes in original public repositories." />
+</picture>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-dark.svg" />
+  <img src="assets/github-activity-light.svg" width="860" alt="31 public commits from 2025-11-01 to 2026-10-12. Monthly counts and methodology follow below." />
+</picture>
+
+**28 original public repositories · 10 primary languages · PixelPair v0.9.4**
+
+<details>
+<summary>See the numbers, recent projects, and how these charts are counted</summary>
+
+| GitHub stats | Count |
+| :--- | ---: |
+| Stars on original public repositories | 0 |
+| Followers | 10 |
+| Public pull requests authored | 1 |
+| Public issues opened | 0 |
+| Public commits in the chart's date window | 31 |
+
+| Language | Share of code bytes |
+| :--- | ---: |
+| JavaScript | 29.5% |
+| PHP | 16.9% |
+| CSS | 12.5% |
+| Python | 11.4% |
+| Jupyter Notebook | 7.8% |
+| HTML | 7.2% |
+| Other | 14.7% |
+
+| Month (UTC) | Public commits |
+| :--- | ---: |
+| 2025-11 | 8 |
+| 2025-12 | 0 |
+| 2026-01 | 0 |
+| 2026-02 | 0 |
+| 2026-03 | 0 |
+| 2026-04 | 12 |
+| 2026-05 | 2 |
+| 2026-06 | 0 |
+| 2026-07 | 0 |
+| 2026-08 | 0 |
+| 2026-09 | 0 |
+| 2026-10 | 9 |
+
+| Public project | Last push (UTC) |
+| :--- | :--- |
+| [pixelpair-plugin](https://github.com/arifhasnat3po/pixelpair-plugin) | 2026-10-12 |
+| [portfolio.io](https://github.com/arifhasnat3po/portfolio.io) | 2026-05-20 |
+| [StreamVision](https://github.com/arifhasnat3po/StreamVision) | 2025-11-25 |
+| [me](https://github.com/arifhasnat3po/me) | 2025-11-08 |
+
+Refreshed **13 Oct 2026** from GitHub's public API. Repository, star, and language charts use original public repositories; forks and private repositories are excluded. Language percentages measure code bytes on default branches, not proficiency, authorship, or time spent. Small languages are grouped as Other.
+
+Public pull requests and issues are lifetime authored counts. Monthly commits use GitHub's public commit search, filtered by author and UTC commit date; only default branches are indexed. The current month is still in progress. These counts differ from GitHub's contribution calendar. This profile and the snake automation are omitted from the recent-project list.
+
+This section refreshes weekly through [GitHub Actions](https://github.com/arifhasnat3po/arifhasnat3po/actions/workflows/profile.yml). [How to maintain it](docs/profile-maintenance.md).
+
+</details>
+<!-- PROFILE-SNAPSHOT:END -->
 
 ---
 
@@ -155,33 +223,6 @@ What makes this project interesting to me: browser/server event matching, consen
 | [StreamVision](https://github.com/arifhasnat3po/StreamVision) | A playlist-based video player: upload an M3U playlist, browse channels, and choose a stream. | React, TypeScript, Vite |
 | [Social Media Web Application](https://github.com/arifhasnat3po/Social-Media-Web-Application) | A full-stack project with accounts, profiles, posts, comments, and likes. | React, Node.js, Express, MongoDB |
 | [Portfolio](https://github.com/arifhasnat3po/portfolio.io) | A personal site with a theme switcher, project filtering, and content managed from one data file. | HTML, CSS, JavaScript |
-
-## Public GitHub snapshot
-
-<!-- PROFILE-SNAPSHOT:START -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snapshot-dark.svg" />
-  <img src="assets/github-snapshot-light.svg" width="100%" alt="28 original public repositories; 10 primary languages; latest PixelPair release v0.9.4. Updated 13 Oct 2026." />
-</picture>
-
-**28 original public repositories · 10 primary languages · PixelPair v0.9.4**
-
-<details>
-<summary>Recent repository updates and how this snapshot is counted</summary>
-
-| Public project | Last push (UTC) |
-| :--- | :--- |
-| [pixelpair-plugin](https://github.com/arifhasnat3po/pixelpair-plugin) | 2026-10-12 |
-| [portfolio.io](https://github.com/arifhasnat3po/portfolio.io) | 2026-05-20 |
-| [StreamVision](https://github.com/arifhasnat3po/StreamVision) | 2025-11-25 |
-| [me](https://github.com/arifhasnat3po/me) | 2025-11-08 |
-
-Refreshed **13 Oct 2026** from GitHub's public API. Counts include original public repositories only; forks and private repositories are excluded. Language counts use each repository's primary language, not proficiency or time spent. This profile and the snake automation are omitted from the recent-project list.
-
-This section refreshes weekly through [GitHub Actions](https://github.com/arifhasnat3po/arifhasnat3po/actions/workflows/profile.yml). [How to maintain it](docs/profile-maintenance.md).
-
-</details>
-<!-- PROFILE-SNAPSHOT:END -->
 
 ## Inside the lab
 
