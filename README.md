@@ -6,7 +6,7 @@
 <div align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-cover-static.svg" />
-    <img src="assets/profile-cover.svg" width="100%" alt="Arif's curiosity lab: a cheerful robot astronaut, floating laptop, ringed planets, and a tiny rocket in a coding orbit." />
+    <img src="assets/profile-cover.svg" width="100%" alt="Arif Hasnat — machine learning, cybersecurity, networking, and Python. Chittagong, Bangladesh. Public commit activity over 12 months." />
   </picture>
 </div>
 

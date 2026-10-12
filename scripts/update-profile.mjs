@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { summarize, replaceSnapshot, escapeXml, originalRepositories, summarizeLanguages, monthWindows, searchCount } from './profile-data.mjs';
 import { statsSvg, languagesSvg, activitySvg } from './dashboard-art.mjs';
+import { buildCover } from './build-cover.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'arifhasnat3po-profile' };
@@ -103,4 +104,5 @@ for (const [name,render,value] of [['github-stats',statsSvg,stats],['github-lang
 await fs.writeFile(path.join(root,'assets/github-activity-light.svg'),activitySvg(months,date));
 await fs.writeFile(path.join(root,'assets/github-activity-dark.svg'),activitySvg(months,date,true));
 await fs.writeFile(path.join(root, 'README.md'), updated);
+await buildCover(months);
 console.log(`Updated public dashboard: ${snapshot.repositories} repositories, ${languages.rows.length} language groups, ${totalCommits} public commits.`);
