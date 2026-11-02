@@ -45,19 +45,19 @@ I enjoy turning complex ideas into clean, useful, and reliable projects.
 <picture>
 
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-stats-dark.svg" />
-  <img src="assets/github-stats-light.svg" width="420" alt="Original public repos: 28; Followers: 13; Public pull requests: 1. On GitHub since 2020." />
+  <img src="assets/github-stats-light.svg" width="420" alt="Original public repos: 28; Followers: 10; Public pull requests: 1. On GitHub since 2020." />
 </picture>
 <picture>
 
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-languages-dark.svg" />
-  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 29.9%, PHP 16.8%, CSS 12.5%, Python 11.3%, Jupyter Notebook 7.8%, HTML 7.2%, Other 14.6%. Language shares by code bytes in original public repositories." />
+  <img src="assets/github-languages-light.svg" width="420" alt="JavaScript 33.1%, PHP 14.4%, CSS 12.0%, HTML 11.5%, Python 10.0%, Jupyter Notebook 6.6%, Other 12.5%. Language shares by code bytes in original public repositories." />
 </picture>
 </p>
 
 <picture>
 <source media="(prefers-reduced-motion: reduce)" srcset="assets/github-activity-animated-static.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-activity-animated-dark.svg" />
-  <img src="assets/github-activity-animated-light.svg" width="860" alt="50 public commits from 2025-11-01 to 2026-10-19. Public default-branch commits; current month is partial." />
+  <img src="assets/github-activity-animated-light.svg" width="860" alt="61 public commits from 2025-12-01 to 2026-11-02. Public default-branch commits; current month is partial." />
 </picture>
 
 **28 original public repositories · 10 primary languages · PixelPair v0.9.4**
